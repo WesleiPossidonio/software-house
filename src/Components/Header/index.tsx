@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Ícones para abrir/fechar o menu
 
 import Logo from "../../assets/Logo Site.svg";
+import { Button } from "@/components/ui/button";
+import { WhatsappLogoIcon } from "@phosphor-icons/react";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,14 +43,18 @@ export const Header = () => {
             Sobre Nós
           </a>
           <a className="md:text-lg text-neutral-100 hover:text-base-blue font-semibold cursor-pointer">
-            Serviços
-          </a>
-          <a className="md:text-lg text-neutral-100 hover:text-base-blue font-semibold cursor-pointer">
-            Portfólio
+            Projetos
           </a>
           <a className="md:text-lg text-neutral-100 hover:text-base-blue font-semibold cursor-pointer">
             Contatos
           </a>
+          <Button
+            className="w-46 p-6 text-lg text-white bg-transparent flex items-center gap-0 border border-neutral-200
+           rounded-lg hover:bg-neutral-100 hover:text-black transition-colors duration-300 cursor-pointer"
+          >
+            <WhatsappLogoIcon className="mr-2 size-6" />
+            Fale Conosco
+          </Button>
         </nav>
 
         {/* Ícone para menu mobile */}
@@ -74,10 +80,7 @@ export const Header = () => {
             Sobre Nós
           </a>
           <a className="md:text-lg text-neutral-200 hover:text-base-blue font-semibold cursor-pointer">
-            Serviços
-          </a>
-          <a className="md:text-lg text-neutral-200 hover:text-base-blue font-semibold cursor-pointer">
-            Portfólio
+            Projetos
           </a>
           <a className="md:text-lg text-neutral-200 hover:text-base-blue font-semibold cursor-pointer">
             Contatos
