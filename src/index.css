@@ -11,7 +11,7 @@
 
 @theme inline {
   --font-heading: var(--font-mono);
-  --font-mono: 'JetBrains Mono Variable', monospace;
+  --font-mono: "JetBrains Mono Variable", monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,6 +50,13 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  --color-base: #01050b;
+  --color-base-blue: #183855;
+  --color-base-light: #1e2c3d;
+  --color-base-lighter: #2a3b4e;
+  --color-base-lightest: #34495e;
+  --color-base-dark: #0b1a2c;
 }
 
 :root {
