@@ -1,4 +1,5 @@
 import { AboutMe, Header, Hero } from "./Components";
+import { Companies } from "./Components/Companies";
 
 export const Home = () => {
   return (
@@ -6,6 +7,7 @@ export const Home = () => {
       <Header />
       <Hero />
       <AboutMe />
+      <Companies />
     </>
   );
 };

@@ -37,7 +37,10 @@ export default function TimelineSection() {
   });
 
   return (
-    <section ref={ref} className="relative py-32  text-white overflow-hidden">
+    <section
+      ref={ref}
+      className="relative py-32 bg-base  text-white overflow-hidden"
+    >
       {/* linha base */}
       <div className="absolute left-1/2 top-0 h-full w-[2px] bg-neutral-500 -translate-x-1/2" />
 
