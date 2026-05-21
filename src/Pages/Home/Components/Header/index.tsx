@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Ícones para abrir/fechar o menu
 
-import Logo from "../../assets/Logo Site.svg";
+import Logo from "@/assets/Logo Site.svg";
 import { Button } from "@/components/ui/button";
 import { WhatsappLogoIcon } from "@phosphor-icons/react";
 

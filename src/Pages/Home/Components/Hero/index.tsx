@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import BgImage from "../../assets/Hero.png";
-import HeroVideo from "../../assets/video-hero.mp4";
-import { Button } from "../../components/ui/button";
+import BgImage from "@/assets/Hero.png";
+import HeroVideo from "@/assets/video-hero.mp4";
+import { Button } from "@/components/ui/button";
 
 const container = {
   hidden: { opacity: 0 },
