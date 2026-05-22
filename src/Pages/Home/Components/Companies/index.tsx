@@ -1,17 +1,23 @@
 import Autoplay from "embla-carousel-autoplay";
-
-import LogoCriard from "@/assets/logoCriard.png";
-import LogoCartorio from "@/assets/download.jpeg";
-import LogoIs53 from "@/assets/Logo-is53.svg";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
 
+import ImageBg from "@/assets/bgCallAction.jpg";
+import LogoCriard from "@/assets/logoCriard.png";
+import LogoCartorio from "@/assets/download.jpeg";
+import LogoIs53 from "@/assets/Logo-is53.svg";
+
 export const Companies = () => {
   return (
-    <section className="w-full h-30 max-h-auto bg-base p-8 flex items-center justify-center gap-6">
+    <section
+      className="w-full h-[12rem] p-6 md:p-15 flex flex-col justify-center items-start relative
+      gap-4 md:gap-2 bg-cover bg-fixed bg-center bg-parallaxDescktop bg-no-repeat my-0 mx-auto overflow-hidden"
+      style={{ backgroundImage: `url(${ImageBg})` }}
+    >
+      <div className="absolute inset-0 bg-base/60" />
       <div className="container mx-auto">
         <Carousel
           plugins={[

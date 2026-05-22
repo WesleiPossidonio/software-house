@@ -3,3 +3,4 @@ export * from "./Header";
 export * from "./Hero";
 export * from "./AboutMe";
 export * from "./TimelineSection";
+export * from "./Portifolio";
