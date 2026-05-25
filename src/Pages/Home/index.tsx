@@ -1,5 +1,12 @@
-import { AboutMe, Header, Hero, Portfolio } from "./Components";
-import { Companies } from "./Components/Companies";
+import {
+  AboutMe,
+  CallAction,
+  Companies,
+  Header,
+  Hero,
+  Portfolio,
+} from "./Components";
+import TimelineSection from "./Components/TimelineSection";
 
 export const Home = () => {
   return (
@@ -9,6 +16,8 @@ export const Home = () => {
       <AboutMe />
       <Companies />
       <Portfolio />
+      <CallAction />
+      <TimelineSection />
     </>
   );
 };

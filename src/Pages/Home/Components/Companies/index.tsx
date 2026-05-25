@@ -13,8 +13,9 @@ import LogoIs53 from "@/assets/Logo-is53.svg";
 export const Companies = () => {
   return (
     <section
-      className="w-full h-[12rem] p-6 md:p-15 flex flex-col justify-center items-start relative
-      gap-4 md:gap-2 bg-cover bg-fixed bg-center bg-parallaxDescktop bg-no-repeat my-0 mx-auto overflow-hidden"
+      className="w-full h-[12rem] p-6 md:p-15 flex flex-col justify-center 
+      items-start relative gap-4 md:gap-2 bg-cover bg-fixed bg-center 
+      bg-parallaxDescktop bg-no-repeat my-0 mx-auto overflow-hidden"
       style={{ backgroundImage: `url(${ImageBg})` }}
     >
       <div className="absolute inset-0 bg-base/60" />

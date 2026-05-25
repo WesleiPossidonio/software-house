@@ -7,13 +7,13 @@ export const AboutMe = () => {
       className="w-full h-auto min-h-[40rem] bg-base flex flex-col 
     items-center justify-center"
     >
-      <div className="container space-y-18 lg:space-y-23 p-6 py-16">
+      <div className="container space-y-18 lg:space-y-23 p-4 md:p-6 py-16">
         <div className="space-y-5">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl text-white text-center">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl text-white text-center leading-tight">
             Na Tideon Tech acreditamos que a tecnologia não é apenas código é
             estratégia, estrutura e visão de futuro.
           </h1>
-          <p className="text-sm lg:text-lg text-white text-center">
+          <p className="text-neutral-400 md:max-w-2xl text-sm md:text-md lg:text-lg text-center mx-auto">
             Criamos{" "}
             <span className="font-bold">
               sites, plataformas e sistemas web{" "}
