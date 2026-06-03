@@ -34,7 +34,7 @@ export const Hero = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <section className="relative w-full h-svh flex flex-col items-start justify-center gap-9 p-4 md:p-12 overflow-hidden">
+    <section className="relative w-full h-svh flex flex-col items-start justify-center gap-9 p-4 md:p-12 lg:p-24 overflow-hidden">
       {/* Imagem fallback */}
       {!videoLoaded && (
         <div

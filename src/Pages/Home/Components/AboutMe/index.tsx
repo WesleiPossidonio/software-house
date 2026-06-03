@@ -13,7 +13,7 @@ export const AboutMe = () => {
             Na Tideon Tech acreditamos que a tecnologia não é apenas código é
             estratégia, estrutura e visão de futuro.
           </h1>
-          <p className="text-neutral-400 md:max-w-2xl text-sm md:text-md lg:text-lg text-center mx-auto">
+          <p className="text-neutral-400  text-sm md:text-md lg:text-lg text-center mx-auto">
             Criamos{" "}
             <span className="font-bold">
               sites, plataformas e sistemas web{" "}
