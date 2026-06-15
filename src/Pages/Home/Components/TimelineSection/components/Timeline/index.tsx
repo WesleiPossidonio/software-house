@@ -94,11 +94,11 @@ export const Timeline = () => {
                   className="relative"
                 >
                   {/* ponto */}
-                  <span className="absolute left-1/2 top-1/2 w-3 h-3 bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2 z-10" />
+                  <span className="absolute left-1/2 top-1/2 w-3 h-3 bg-base-blue rounded-full -translate-x-1/2 -translate-y-1/2 z-10" />
 
                   {/* ícone */}
-                  <div className="bg-[#0f172a] border border-purple-500/30 rounded-xl p-6 shadow-lg backdrop-blur-md">
-                    <Icon className="text-purple-500 w-6 h-6" />
+                  <div className="bg-white/5 border border-white/30 rounded-xl p-6 shadow-lg backdrop-blur-md">
+                    <Icon className="text-base-blue w-6 h-6" />
                   </div>
                 </motion.div>
               </div>

@@ -36,7 +36,6 @@ export const Portfolio = () => {
           <p className="text-neutral-200 uppercase tracking-[0.3rem] text-sm font-semibold">
             Portfólio
           </p>
-          +
           <h2 className="text-2xl md:text-6xl text-white leading-tight">
             Projetos desenvolvidos para transformar ideias em experiências
             digitais modernas.

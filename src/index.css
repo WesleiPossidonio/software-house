@@ -52,11 +52,11 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 
   --color-base: #01050b;
-  --color-base-blue: #183855;
+  --color-base-dark: #000;
+  --color-base-blue: ##0e1217;
   --color-base-light: #1e2c3d;
   --color-base-lighter: #2a3b4e;
   --color-base-lightest: #34495e;
-  --color-base-dark: #0b1a2c;
 }
 
 :root {

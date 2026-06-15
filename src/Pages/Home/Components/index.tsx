@@ -6,3 +6,5 @@ export * from "./TimelineSection";
 export * from "./Portifolio";
 export * from "./CallAction";
 export * from "./Companies";
+export * from "./Comments";
+export * from "./Contact";

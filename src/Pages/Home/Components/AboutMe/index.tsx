@@ -1,18 +1,17 @@
 import { DesktopIcon } from "@phosphor-icons/react";
 import { Code, SquareDashedBottomCode } from "lucide-react";
+import { motion } from "framer-motion";
+import { AnimatedTitle } from "@/assets/components/AnimatedTitle";
 
 export const AboutMe = () => {
   return (
     <section
-      className="w-full h-auto min-h-[40rem] bg-base flex flex-col 
-    items-center justify-center"
+      className="w-full h-auto min-h-[40rem] bg-white/1 flex flex-col 
+      items-center justify-center"
     >
-      <div className="container space-y-18 lg:space-y-23 p-4 md:p-6 py-16">
+      <motion.div className="container space-y-18 lg:space-y-23 p-4 py-6 md:py-20">
         <div className="space-y-5">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl text-white text-center leading-tight">
-            Na Tideon Tech acreditamos que a tecnologia não é apenas código é
-            estratégia, estrutura e visão de futuro.
-          </h1>
+          <AnimatedTitle text="Na Tideon Tech acreditamos que a tecnologia não é apenas código, é estratégia, estrutura e visão de futuro." />
           <p className="text-neutral-400  text-sm md:text-md lg:text-lg text-center mx-auto">
             Criamos{" "}
             <span className="font-bold">
@@ -34,8 +33,8 @@ export const AboutMe = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 ">
           <div
             className="h-60 p-6 flex flex-col justify-center rounded-xl 
-          border border-white/10 bg-white/5 backdrop-blur-sm 
-          hover:scale-[1.03] transition-transform duration-300 "
+            border border-white/5 bg-white/2 backdrop-blur-sm
+            hover:scale-[1.03] transition-transform duration-300 "
           >
             <Code className="w-13 h-13 text-white mb-4" />
             <div>
@@ -51,8 +50,8 @@ export const AboutMe = () => {
 
           <div
             className="h-60 p-6 flex flex-col justify-center rounded-xl 
-          border border-white/10 bg-white/5 backdrop-blur-sm 
-          hover:scale-[1.03] transition-transform duration-300"
+            border border-white/5 bg-white/2 backdrop-blur-sm 
+            hover:scale-[1.03] transition-transform duration-300"
           >
             <SquareDashedBottomCode className="w-13 h-13 text-white mb-4" />
             <div>
@@ -68,8 +67,8 @@ export const AboutMe = () => {
 
           <div
             className="h-60 p-6 flex flex-col justify-center rounded-xl 
-          border border-white/10 bg-white/5 backdrop-blur-sm 
-          hover:scale-[1.03] transition-transform duration-300"
+            border border-white/5 bg-white/2 backdrop-blur-sm 
+            hover:scale-[1.03] transition-transform duration-300"
           >
             <DesktopIcon className="w-13 h-13 text-white mb-4" />
             <div>
@@ -83,7 +82,7 @@ export const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
