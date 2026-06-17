@@ -12,7 +12,7 @@ export const CallAction = () => {
       <div className="absolute inset-0 bg-base/60 z-8" />
       <div className="container mx-auto z-10 text-center space-y-8">
         <div className="space-y-3">
-          <h2 className="text-2xl md:text-6xl text-white ">
+          <h2 className="text-3xl md:text-6xl text-white ">
             Transforme sua ideia em uma experiência digital de alto impacto.
           </h2>
           <p className="md:w-[80%] mx-auto text-neutral-200 text-sm md:text-md lg:text-lg">

@@ -4,27 +4,27 @@ import { SatelliteDish, Plug, Wifi } from "lucide-react";
 
 const steps = [
   {
-    title: "Order Your Kit",
+    title: "Análize",
     description:
-      "Get your NovaLink dish and router shipped directly to your door — no technician needed.",
+      "Entendemos o contexto, os objetivos e os desafios do negócio.",
     icon: SatelliteDish,
   },
   {
-    title: "Set It Up",
+    title: "Planejamento",
     description:
-      "Plug it in, power it up, and point it at the sky. The smart dish aligns itself automatically.",
+      "Definimos a melhor estratégia para transformar ideias em soluções concretas.",
     icon: Plug,
   },
   {
-    title: "Connect Instantly",
+    title: "Desenvolvimento",
     description:
-      "Stream, work, game, and browse with speeds that rival fiber — wherever you are.",
+      "Construímos cada etapa com atenção aos detalhes, qualidade e desempenho.",
     icon: Wifi,
   },
   {
-    title: "Connect Instantly",
+    title: "Lançamento e Evolução",
     description:
-      "Stream, work, game, and browse with speeds that rival fiber — wherever you are.",
+      "Colocamos ao ar a solução e acompanhamos seu crescimento para garantir sua sustentabilidade ao longo do tempo.",
     icon: Wifi,
   },
 ];
@@ -43,7 +43,7 @@ export const Timeline = () => {
   });
 
   return (
-    <section ref={ref} className="relative   text-white overflow-hidden">
+    <section ref={ref} className="relative text-white overflow-hidden">
       {/* linha base */}
       <div className="absolute left-1/2 top-0 h-full w-[2px] bg-neutral-500 -translate-x-1/2" />
 
@@ -74,8 +74,10 @@ export const Timeline = () => {
                      text-left
                     `}
               >
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                <p className="text-gray-400 text-sm max-w-md mx-auto md:mx-0">
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-400 text-sm mx-auto md:mx-0">
                   {step.description}
                 </p>
               </motion.div>

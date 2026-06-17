@@ -12,7 +12,7 @@ export const AnimatedTitle = ({ text }: AnimatedTitleProps) => {
       {words.map((word, index) => (
         <motion.span
           key={index}
-          className="inline-block mr-3"
+          className="inline-block mr-1 md:mr-3"
           initial={{
             y: 80,
             opacity: 0,

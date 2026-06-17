@@ -29,7 +29,7 @@ const projects = [
 
 export const Portfolio = () => {
   return (
-    <section className="w-full py-32 px-5 bg-base overflow-hidden">
+    <section className="w-full py-16 md:py-32 px-6 bg-base overflow-hidden">
       <div className="container mx-auto flex flex-col gap-16">
         {/* HEADER */}
         <div className="flex flex-col gap-5 items-center text-center">

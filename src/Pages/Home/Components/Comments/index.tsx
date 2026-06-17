@@ -42,19 +42,19 @@ const comentsArray = [
 export const Coments = () => {
   return (
     <section className="w-full h-auto flex items-center bg-base justify-center">
-      <div className="container mx-auto py-25 p-6 md:px-0 space-y-5 flex flex-col md:flex-row items-center justify-center gap-7">
+      <div className="container mx-auto py-16 md:py-25 p-6 md:px-0 space-y-5 flex flex-col md:flex-row items-center justify-center gap-7">
         <div
           className="w-full flex flex-col items-center justify-start gap-3"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
           <div className="self-start">
-            <h4 className="text-white text-sm">Testemunhos</h4>
-            <h1 className="text-white text-2xl md:text-5xl">
+            <h4 className="text-white text-sm">Depoimentos</h4>
+            <h1 className="text-white text-3xl md:text-5xl">
               O que dizem <br /> sobre nosso trabalho
             </h1>
           </div>
-          <p className="text-white text-sm md:text-md m-0 md:w-3/4 self-start">
+          <p className="text-neutral-400 text-sm md:text-md m-0 md:w-3/4 self-start">
             Confira o feedback de nossos clientes e parceiros. Eles compartilham
             suas experiências e como nossas soluções ajudaram a transformar seus
             projetos em sucesso.
@@ -85,7 +85,7 @@ export const Coments = () => {
                     <p className="text-lg font-semibold text-white">
                       {coments.name}
                     </p>
-                    <p className="text-sm text-white">{coments.text}</p>
+                    <p className="text-sm text-neutral-400">{coments.text}</p>
                     <div className="flex flex-col items-start justify-center gap-3">
                       <div className="flex">
                         <Star className="size-4 text-yellow-400" />

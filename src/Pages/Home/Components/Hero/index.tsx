@@ -34,7 +34,10 @@ export const Hero = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <section className="relative w-full h-svh flex flex-col items-start justify-center gap-9 p-4 md:p-12 lg:p-24 overflow-hidden">
+    <section
+      className="relative w-full h-svh flex flex-col items-start 
+    justify-center gap-9 p-4 md:p-12 lg:p-24 overflow-hidden"
+    >
       {/* Imagem fallback */}
       {!videoLoaded && (
         <div
@@ -45,9 +48,10 @@ export const Hero = () => {
 
       {/* Video background */}
       <video
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-          videoLoaded ? "opacity-100" : "opacity-0"
-        }`}
+        className={`absolute inset-0 w-full h-full object-cover 
+          transition-opacity duration-700 ${
+            videoLoaded ? "opacity-100" : "opacity-0"
+          }`}
         autoPlay
         muted
         loop
@@ -63,19 +67,28 @@ export const Hero = () => {
 
       {/* Conteúdo */}
       <motion.div
-        className="relative z-10 flex flex-col gap-6 md:gap-9"
+        className="relative z-10 flex flex-col gap-5 md:gap-9"
         variants={container}
         initial="hidden"
         animate={videoLoaded ? "visible" : "hidden"}
       >
-        <motion.p
-          variants={item}
-          className="text-white text-3xl md:text-7xl font-semibold leading-11 md:leading-19"
-        >
-          Soluções digitais <br />
-          inteligentes para impulsionar <br />
-          seu negócio ao próximo nível
-        </motion.p>
+        <div className="space-y-3 md:space-y-5">
+          <motion.h1
+            variants={item}
+            className="text-white text-3xl md:text-7xl font-semibold leading-9.3 md:leading-19"
+          >
+            Tecnologia e software sob medida <br /> para impulsionar seu
+            negócio.
+          </motion.h1>
+
+          <motion.p
+            variants={item}
+            className="text-white text-sm md:text-lg md:text-xl"
+          >
+            Criamos soluções digitais que unem estratégia, tecnologia e execução
+            para transformar desafios <br /> em oportunidades de crescimento.
+          </motion.p>
+        </div>
 
         <motion.div variants={item}>
           <Button

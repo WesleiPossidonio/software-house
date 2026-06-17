@@ -7,19 +7,21 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full h-[32rem] p-6 md:p-15 flex flex-col md:flex-row justify-center 
+      className="w-full h-auto min-h-[32rem] p-6 md:p-15 flex flex-col md:flex-row justify-center 
       items-start gap-4 md:gap-2 bg-cover bg-fixed bg-center relative
       bg-parallaxDescktop bg-no-repeat my-0 mx-auto "
       style={{ backgroundImage: `url(${ImageBg})` }}
     >
       <div className="absolute inset-0 bg-base/60 z-8" />
-      <div className="container mx-auto flex items-center justify-between z-10">
-        <h1 className="text-4xl mt-45">Entre em contato conosco</h1>
+      <div className="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between z-10">
+        <h1 className="text-3xl md:text-6xl text-white text-center md:text-start z-12 mt-10 my-36 md:my-0 md:mt-45">
+          Entre em contato conosco
+        </h1>
 
         <form
           action=""
-          className="w-full md:w-[30rem] h-[38rem] flex flex-col items-start justify-center  p-8
-          border border-white/8 z-10 -mt-27 bg-base rounded-md shadow-2xl"
+          className="w-full md:w-[30rem] h-[35rem] md:h-[38rem] flex flex-col items-start justify-center p-6 md:p-8
+          border border-white/8 z-10 -mt-27 mb-10 md:mb-0 bg-base rounded-md shadow-2xl"
         >
           <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
           <Input
@@ -44,7 +46,7 @@ export const Contact = () => {
           />
           <Button
             type="submit"
-            className="w-60 h-11 mt-8 px-4 py-2 text-md bg-neutral-300 text-black rounded-md hover:bg-primary/90 transition-colors duration-300"
+            className=" w-full md:w-60 h-11 mt-8 px-4 py-2 text-md bg-neutral-300 text-black rounded-md hover:bg-primary/90 transition-colors duration-300"
           >
             Enviar
           </Button>
