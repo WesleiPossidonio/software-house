@@ -29,19 +29,18 @@ const projects = [
 
 export const Portfolio = () => {
   return (
-    <section className="w-full py-32 px-5 bg-base overflow-hidden">
+    <section className="w-full py-16 md:py-32 px-6 bg-base overflow-hidden">
       <div className="container mx-auto flex flex-col gap-16">
         {/* HEADER */}
         <div className="flex flex-col gap-5 items-center text-center">
           <p className="text-neutral-200 uppercase tracking-[0.3rem] text-sm font-semibold">
             Portfólio
           </p>
-          +
-          <h2 className="text-4xl md:text-6xl text-white  leading-tight">
+          <h2 className="text-2xl md:text-6xl text-white leading-tight">
             Projetos desenvolvidos para transformar ideias em experiências
             digitais modernas.
           </h2>
-          <p className="text-neutral-400 max-w-2xl text-lg">
+          <p className="text-neutral-400 md:max-w-2xl text-sm md:text-md lg:text-lg">
             Cada projeto é construído com foco em performance, experiência do
             usuário e escalabilidade.
           </p>
@@ -65,7 +64,7 @@ export const Portfolio = () => {
         </div>
 
         {/* GRID */}
-        <div className="max-w-[80%] mx-auto mt-16">
+        <div className="w-full md:max-w-[80%] mx-auto mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-5">
             {projects.map((project, index) => {
               const isEven = index % 2 !== 0;
@@ -87,7 +86,7 @@ export const Portfolio = () => {
                 >
                   {/* IMAGE */}
                   <div
-                    className="w-[90%] h-[32rem] relative overflow-hidden rounded-2xl
+                    className="md:w-[90%] h-[15rem] md:h-[32rem] relative overflow-hidden rounded-2xl
                       border border-white/10 flex bg-white/5 
                     "
                   >
@@ -114,7 +113,7 @@ export const Portfolio = () => {
                       {project.category}
                     </p>
 
-                    <h3 className="text-2xl font-semibold text-white">
+                    <h3 className="md:text-2xl font-semibold text-white">
                       {project.title}
                     </h3>
                   </div>
